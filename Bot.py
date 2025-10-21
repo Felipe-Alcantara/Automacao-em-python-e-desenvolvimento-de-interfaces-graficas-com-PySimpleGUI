@@ -1,7 +1,7 @@
-# Qual bibioteca usar? Python PySimpleGUI
+# Qual bibioteca usar? Python FreeSimpleGUI (fork gratuito do PySimpleGUI)
 
-# Importa a biblioteca PySimpleGUI
-import PySimpleGUI as sg
+# Importa a biblioteca FreeSimpleGUI
+import FreeSimpleGUI as sg
 
 # Define o tema da GUI como "reddit"
 sg.theme("reddit")

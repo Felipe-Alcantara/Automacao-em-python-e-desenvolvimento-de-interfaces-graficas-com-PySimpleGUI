@@ -1,22 +1,162 @@
-# Automacao-em-python-e-desenvolvimento-de-interfaces-graficas-com-PySimpleGUI
- Um robô que entre em um email, baixa as mensagens em anexo salvando numa pasta, após isso, lê os anexos e os que possuirem códigos de barras são lançados em uma planilha com o código digitavel do boleto, nome do arquivo, data de vencimento e o valor.
+# 🤖 Automação de E-mail e Processamento de Boletos
 
-# Projeto PySimpleGUI
+<div align="center">
 
-Este projeto é um script Python que usa a biblioteca PySimpleGUI para criar uma interface gráfica do usuário (GUI). A GUI permite que os usuários insiram um email e uma senha, e escolham pastas para anexos e planilhas.
+![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
+![FreeSimpleGUI](https://img.shields.io/badge/FreeSimpleGUI-5.0+-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Como funciona
+*Sistema automatizado para download de anexos de e-mail e extração de dados de boletos*
 
-1. **Importação da biblioteca PySimpleGUI**: A biblioteca PySimpleGUI é usada para criar a GUI.
+</div>
 
-2. **Definição do tema da GUI**: O tema da GUI é definido como "reddit".
+---
 
-3. **Definição do layout da GUI**: O layout da janela da GUI é definido. A janela contém campos de texto para inserir um email e uma senha, dois botões para selecionar pastas para anexos e planilhas, e um botão "Salvar".
+## 📋 Sobre o Projeto
 
-4. **Criação da janela da GUI**: Uma janela é criada com o título "Principal" e o layout definido anteriormente.
+Este projeto é um robô de automação desenvolvido em Python que realiza as seguintes tarefas:
 
-5. **Loop de eventos**: Um loop infinito é iniciado que mantém a janela aberta. O programa lê os eventos da janela e os valores dos campos de entrada. Se o evento for o fechamento da janela, o loop é interrompido e o programa termina. Se o evento for o clique no botão "Salvar", o programa recupera os valores inseridos nos campos de entrada e os imprime.
+1. **Acessa uma conta de e-mail** configurada pelo usuário
+2. **Baixa mensagens e anexos** automaticamente para uma pasta específica
+3. **Processa os anexos** em busca de códigos de barras de boletos
+4. **Extrai informações** importantes como:
+   - Código digitável do boleto
+   - Nome do arquivo
+   - Data de vencimento
+   - Valor do boleto
+5. **Lança os dados em uma planilha** para fácil gerenciamento
 
-## Utilidade
+### 💡 Casos de Uso
 
-Este projeto pode ser útil para qualquer situação em que seja necessário coletar informações do usuário através de uma GUI, como um email e uma senha, e permitir que o usuário selecione pastas para anexos e planilhas. Por exemplo, pode ser usado em um aplicativo de email para coletar as credenciais do usuário e permitir que o usuário selecione pastas para anexos de email e planilhas.
+- Gestão financeira de empresas
+- Controle de contas a pagar
+- Automação de processos de cobrança
+- Organização de boletos pessoais
+- Redução de trabalho manual repetitivo
+
+---
+
+## ✨ Funcionalidades
+
+- ✅ Interface gráfica intuitiva e moderna
+- ✅ Configuração fácil de credenciais de e-mail
+- ✅ Seleção personalizada de pastas
+- ✅ Processamento automático de anexos
+- ✅ Extração de dados de boletos via código de barras
+- ✅ Exportação para planilha Excel
+
+---
+
+## 🚀 Como Usar
+
+### Pré-requisitos
+
+- Python 3.13 ou superior
+- pip (gerenciador de pacotes Python)
+
+### Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Felipe-Alcantara/Automacao-em-python-e-desenvolvimento-de-interfaces-graficas-com-PySimpleGUI.git
+   cd Automacao-em-python-e-desenvolvimento-de-interfaces-graficas-com-PySimpleGUI
+   ```
+
+2. **Crie um ambiente virtual** (recomendado)
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+3. **Instale as dependências**
+   ```bash
+   pip install FreeSimpleGUI
+   ```
+
+### Executando o Projeto
+
+```bash
+python Bot.py
+```
+
+### Configuração
+
+1. **Digite suas credenciais de e-mail** nos campos fornecidos
+2. **Selecione a pasta de anexos** onde os arquivos serão salvos
+3. **Selecione a pasta da planilha** onde o arquivo Excel será gerado
+4. **Clique em "Salvar"** para confirmar as configurações
+
+---
+
+## 🖼️ Interface
+
+A aplicação possui uma interface gráfica simples e intuitiva com:
+
+- 📧 **Campo de E-mail**: Para inserir seu endereço de e-mail
+- 🔒 **Campo de Senha**: Campo seguro com caracteres ocultos
+- 📁 **Seletor de Pasta de Anexos**: Para escolher onde salvar os anexos baixados
+- 📊 **Seletor de Pasta de Planilha**: Para escolher onde salvar a planilha gerada
+- 💾 **Botão Salvar**: Para confirmar todas as configurações
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **[Python](https://www.python.org/)** - Linguagem de programação principal
+- **[FreeSimpleGUI](https://github.com/spyoungtech/FreeSimpleGUI)** - Framework para interface gráfica (fork open-source do PySimpleGUI)
+
+### Por que FreeSimpleGUI?
+
+O projeto originalmente usava PySimpleGUI, mas foi migrado para o **FreeSimpleGUI** devido à mudança de licenciamento do PySimpleGUI para um modelo comercial. O FreeSimpleGUI é:
+- ✅ Totalmente gratuito e open-source
+- ✅ Compatível com o código PySimpleGUI original
+- ✅ Mantém todas as funcionalidades
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+📦 Automacao-em-python-e-desenvolvimento-de-interfaces-graficas-com-PySimpleGUI
+┣ 📜 Bot.py           # Script principal da aplicação
+┣ 📜 README.md        # Documentação do projeto
+┣ 📜 LICENSE          # Licença do projeto
+┗ 📁 .venv            # Ambiente virtual Python (criado localmente)
+```
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto:
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/NovaFuncionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a Branch (`git push origin feature/NovaFuncionalidade`)
+5. Abra um Pull Request
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 👨‍💻 Autor
+
+**Felipe Alcantara**
+
+- GitHub: [@Felipe-Alcantara](https://github.com/Felipe-Alcantara)
+
+---
+
+## ⭐ Mostre seu apoio
+
+Se este projeto foi útil para você, considere dar uma ⭐!
+
+---
+
+<div align="center">
+
+**Desenvolvido com ❤️ e Python**
+
+</div>
