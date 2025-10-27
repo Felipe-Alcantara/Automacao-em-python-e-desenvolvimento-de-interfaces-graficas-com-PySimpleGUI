@@ -10,6 +10,23 @@
 
 </div>
 
+## 📚 Índice
+
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Como Usar](#como-usar)
+   - [Pré-requisitos](#pré-requisitos)
+   - [Instalação](#instalação)
+   - [Executando o Projeto](#executando-o-projeto)
+- [Configuração](#configuração)
+- [Interface](#🖼️-interface)
+- [Tecnologias Utilizadas](#🛠️-tecnologias-utilizadas)
+- [Estrutura do Projeto](#📂-estrutura-do-projeto)
+- [Próximas Funcionalidades](#🔮-próximas-funcionalidades)
+- [Contribuindo](#🤝-contribuindo)
+- [Licença](#📝-licença)
+- [Autor](#👨‍💻-autor)
+
 ---
 
 ## 📋 Sobre o Projeto
